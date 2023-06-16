@@ -1,0 +1,8 @@
+Flask==2.3.2
+tensorflow==2.12.0
+gunicorn
+numpy
+pillow
+pandas
+google-cloud-storage
+firebase-admin
