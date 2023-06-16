@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "731073968746",
+    "firebase_url": "https://capstoneproduct23-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "capstoneproduct23",
+    "storage_bucket": "capstoneproduct23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:731073968746:android:6519602a9681bcd3806813",
+        "android_client_info": {
+          "package_name": "com.capstoneprodukbangkit.batik"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuapb5Ka6V29J8zHJyxoQVww5gAGjOz6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

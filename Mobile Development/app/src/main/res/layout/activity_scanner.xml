@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.find.ScannerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:background="@drawable/bg_find"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/img_upload"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:background="@color/background"
+                    android:src="@drawable/scanner_img" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:id="@+id/upload_output"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ll" />
+
+            <Button
+                android:id="@+id/select_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/btn"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="@string/snap"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/background"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/upload_output" />
+
+            <Button
+                android:id="@+id/uploadu_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/btn_bg"
+                android:fontFamily="@font/quicksand_bold"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/upload"
+                android:textColor="@color/background"
+                android:textSize="14sp"
+                android:transitionName="transition_capture_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/select_btn" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</ScrollView>
